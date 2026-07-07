@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta  name="description" content="Интернет магазин хозяйственных товаров">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/paymentanddelivery.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/catalog.css">
+
+  <link rel="shortcut icon" href="./images/header/favicon.png" type="image/x-icon">
+  <title>Хозмир</title>
+</head>
+<body>
+
+<div class="top--header">
+</div>
+<header>
+  <div class="container">
+    <div class="header__main-part">
+
+      <a href="#" class="logo">
+        <img src="./images/header/logo.png" alt="logo">
+      </a>
+
+      <button class="catalog">
+        <img class="catalog--icon" src="./images/header/menu-open.png" alt="открыть каталог">
+        <span>Каталог</span>
+      </button>
+
+      <form class="search">
+        <input class="search--input" type="text" name="search" placeholder="Найти" maxlength="100">
+        <button><img class="search--icon" src="./images/header/search-icon.svg" alt="поиск"></button>
+      </form>
+
+      <button class="cabinet">
+        <img src="./images/header/auth-icon.svg" alt="человек">
+        <span>Войти</span>
+      </button>
+      <button class="basket">
+        <img src="./images/header/basket-icon.svg" alt="корзина">
+        <span>Корзина</span>
+      </button>
+    </div>
+
+    <div class="header__botton-mobile">
+      <button class="burger-menu"><img src="./images/header/menu-open.png" alt="open"></button>
+    </div>
+
+    <div class="header__botton">
+      <a href="#">Акции</a>
+      <a href="#">Оплата и доставка</a>
+      <a href="#">Магазины</a>
+      <a href="#">Контакты</a>
+      <a href="#">Бонусная программа</a>
+    </div>
+
+    <div class="header__catalog-mobile">
+      <div class="mobile__links">
+        <div>
+          <a class="links__title" href="#">Сервировака стола</a>
+          <a class="links__item" href="#">Столовые посуда</a>
+          <a class="links__item" href="#">Посуда для напитков</a>
+        </div>
+
+        <div>
+          <a class="links__title" href="#">Текстиль</a>
+          <a class="links__item" href="#">Подушки</a>
+          <a class="links__item" href="#">Одеяла</a>
+        </div>
+
+        <div>
+          <a class="links__title" href="#">Бытовая химия</a>
+          <a class="links__item" href="#">Средства для стирки</a>
+          <a class="links__item" href="#">Средства для мытья посуды</a>
+        </div>
+
+        <div>
+          <a class="links__title" href="#">Канцтовары</a>
+          <a class="links__item" href="#">Бумажная продукция</a>
+          <a class="links__item" href="#">Письменные принадлежности</a>
+        </div>
+
+        <div>
+          <a class="links__title" href="#">Хозтовары</a>
+          <a class="links__item" href="#">Веревки, канаты</a>
+          <a class="links__item" href="#">Стрейч-плёнка</a>
+        </div>
+
+        <div>
+          <a class="links__title" href="#">Мебель</a>
+          <a class="links__item" href="#">Диваны</a>
+          <a class="links__item" href="#">Кресла</a>
+        </div>
+      </div>
+    </div><!--header__catalog-mobile-->
+
+
+  </div><!--container-->
+</header>
+
+
+<div class="catalog__menu">
+  <div class="container">
+    <div class="links__wrapper">
+      <div class="menu__links">
+        <div data-index="1" >Сервировка стола <img src="./images/header/triangle.svg" alt="triangle"></div>
+        <div data-index="2" >Текстиль <img src="./images/header/triangle.svg" alt="triangle"></div>
+        <div data-index="3" >Бытовая химия <img src="./images/header/triangle.svg" alt="triangle"></div>
+        <div data-index="4" >Канцтовары <img src="./images/header/triangle.svg" alt="triangle"></div>
+        <div data-index="5" >Хозтовары <img src="./images/header/triangle.svg" alt="triangle"></div>
+        <div data-index="6" >Мебель <img src="./images/header/triangle.svg" alt="triangle"></div>
+      </div><!--menu__links-->
+
+      <div class="links__inner">
+        <div data-index="1">
+          <a class="links__title" href="#">Сервировака стола</a>
+          <a class="links__item" href="#">Столовые посуда</a>
+          <a class="links__item" href="#">Посуда для напитков</a>
+        </div>
+
+        <div data-index="2">
+          <a class="links__title" href="#">Текстиль</a>
+          <a class="links__item" href="#">Подушки</a>
+          <a class="links__item" href="#">Одеяла</a>
+        </div>
+
+        <div data-index="3">
+          <a class="links__title" href="#">Бытовая химия</a>
+          <a class="links__item" href="#">Средства для стирки</a>
+          <a class="links__item" href="#">Средства для мытья посуды</a>
+        </div>
+
+        <div data-index="4">
+          <a class="links__title" href="#">Канцтовары</a>
+          <a class="links__item" href="#">Бумажная продукция</a>
+          <a class="links__item" href="#">Письменные принадлежности</a>
+        </div>
+
+        <div data-index="5">
+          <a class="links__title" href="#">Хозтовары</a>
+          <a class="links__item" href="#">Веревки, канаты</a>
+          <a class="links__item" href="#">Стрейч-плёнка</a>
+        </div>
+
+        <div data-index="6">
+          <a class="links__title" href="#">Мебель</a>
+          <a class="links__item" href="#">Диваны</a>
+          <a class="links__item" href="#">Кресла</a>
+        </div>
+      </div><!--links__inner-->
+
+    </div><!--links__wrapper-->
+  </div>
+</div><!--catalog__menu-->
+
+<section class="payment-and-delivery">
+  <div class="container">
+    <h2>Оплата и доствака</h2>
+    <p>Мы доставим ваш заказ в любую точку Беларуси. Для отображения корректной стоимости и сроков доставки, а также наличия товаров, выберите город или населенный пункт доставки: Минск <br>
+      *Заказывая услугу доставки, покупатель обязуется в оговоренное время находиться по указанному адресу, чтобы принять товар у курьера. Повторную доставку товаров клиент оплачивает дополнительно. </p>
+    <p><b>Выгрузка и подъём на этаж:</b></p>
+    <p>Бесплатно, если масса заказа не превышает 30 кг и в составе заказа нет крупногабаритных товаров;
+      Стоимость услуг рассчитывается автоматически при оформлении заказа.</p>
+    <p><b>Доставка без выгрузки и подъёма на этаж</b></p>
+    <p>Курьер доставляет товар до подъезда (в частном секторе – до крыльца при условии беспрепятственного подъезда к нему. В случае невозможности подъезда – до места, подходящего для выгрузки), размещает товар на краю машины.
+      Выгрузку и подъем на этаж осуществляет покупатель.</p>
+    <p><b>Доставка с выгрузкой заказа</b></p>
+    <p>Курьер доставляет товар до подъезда (в частном секторе – до крыльца при условии беспрепятственного подъезда к нему. В случае невозможности подъезда – до места, подходящего для выгрузки). Курьер (при необходимости с помощью грузчиков) выгружает товар и размещает его в удобном для покупателя месте на расстоянии не более 5 (пяти) метров от транспортного средства Курьера. Дальнейшее перемещение товара и подъем на этаж осуществляет покупатель.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__catalog">
+        <span class="footer__title">Каталог</span>
+        <div>
+          <div>
+            <a href="#">Сервировка стола</a>
+            <a href="#">Мебель</a>
+            <a href="#">Бытовая химия</a>
+          </div>
+          <div>
+            <a href="#">Хозтовары</a>
+            <a href="#">Канцтовары</a>
+            <a href="#">Текстиль</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__client">
+        <span class="footer__title">Покупателям </span>
+        <a href="#">Бонусная программа</a>
+        <a href="#">Договор публичной оферты</a>
+        <a href="#">Доставка и оплата</a>
+      </div>
+
+
+
+      <div class="callback">
+        <span class="footer__title">Связаться с нами</span>
+        <a href="#">+375 (29) 555-55-55</a>
+        <a href="#">+375 (33) 555-55-55</a>
+
+        <a href="#">info@hozmir.by</a>
+
+        <a href="#">Минск, Долгиновский тракт, 188</a>
+      </div>
+    </div>
+
+    <div class="footer__social">
+      <span>Следите за акциями и новостями</span>
+      <div>
+        <img src="./images/footer/img1.png" alt="instagram">
+        <img src="./images/footer/img2.png" alt="vk">
+        <img src="./images/footer/img3.png" alt="tictok">
+      </div>
+      <span>© ХозМир 2026</span>
+    </div>
+  </div><!--container-->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/catalog.js"></script>
+<script src="./js/burger-menu.js"></script>
+</body>
+</html>
