@@ -4,16 +4,20 @@ const catalogIcon = document.querySelector('.catalog--icon');
 const links = document.querySelectorAll('.links__inner div');
 const catalogLinks = document.querySelectorAll('.menu__links div');
 const linksInner = document.querySelector('.links__inner');
+const catalogOpenBtn = document.querySelector('.catalog-open');
+const catalogCloseBtn = document.querySelector('.catalog-close');
 
 catalogBtn.addEventListener('click', function () {
     if(catalogBtn.classList.contains('show')) {
         catalogBtn.classList.remove('show');
-        catalogIcon.setAttribute('src', './images/header/menu-open.png');
+        catalogCloseBtn.classList.remove('catalog-active');
+        catalogOpenBtn.classList.add('catalog-active');
         catalogMenu.classList.remove('show');
         linksInner.classList.remove('show');
     } else {
         catalogBtn.classList.add('show');
-        catalogIcon.setAttribute('src', './images/header/menu-close.png');
+        catalogOpenBtn.classList.remove('catalog-active');
+        catalogCloseBtn.classList.add('catalog-active');
         catalogMenu.classList.add('show');
         linksInner.classList.add('show');
     }
